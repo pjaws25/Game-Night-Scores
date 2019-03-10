@@ -245,6 +245,9 @@
                                 <state key="normal" title="Point">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="teamOneButtonPressed:" destination="Eo5-cf-WBw" eventType="touchUpInside" id="lK3-hB-waz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEP-9X-PRl">
                                 <rect key="frame" x="40" y="341" width="123" height="49"/>
@@ -263,6 +266,9 @@
                                 <state key="normal" title="Point">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="teamTwoButtonPressed:" destination="Eo5-cf-WBw" eventType="touchUpInside" id="0Fb-1n-r7W"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUD-Jf-sJz">
                                 <rect key="frame" x="211" y="341" width="123" height="49"/>
@@ -281,6 +287,9 @@
                                 <state key="normal" title="Point">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="teamThreeButtonPressed:" destination="Eo5-cf-WBw" eventType="touchUpInside" id="uWR-6A-cck"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c69-ed-bSI">
                                 <rect key="frame" x="40" y="632" width="123" height="49"/>
@@ -299,6 +308,9 @@
                                 <state key="normal" title="Point">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="teamFourButtonPressed:" destination="Eo5-cf-WBw" eventType="touchUpInside" id="UmA-TN-3JN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFe-9R-9Hq">
                                 <rect key="frame" x="211" y="632" width="123" height="49"/>
@@ -322,6 +334,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hux-gt-NbS"/>
                     </view>
+                    <connections>
+                        <outlet property="teamFourPoint" destination="bBp-mt-RG6" id="cXC-4T-ujS"/>
+                        <outlet property="teamOnePoint" destination="B9f-WT-U4e" id="uii-ff-VX7"/>
+                        <outlet property="teamThreePoint" destination="gop-os-tGN" id="O30-Wz-8Gc"/>
+                        <outlet property="teamTwoPoint" destination="hbB-wq-Tjm" id="chc-eP-wh1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGD-TD-Bh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
