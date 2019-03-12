@@ -52,6 +52,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 
             }
             
+            cell.minusButton = {
+                self.items[indexPath.row].points -= 1
+                
+                tableView.reloadRows(at: [indexPath], with: .automatic)
+                self.saveData()
+            }
+            
             return cell
             
         }

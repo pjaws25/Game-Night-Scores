@@ -11,6 +11,7 @@ import UIKit
 class PointsCell: UITableViewCell {
 
     var buttonPressed: (()->Void)? //needed for closure variable
+    var minusButton: (()->Void)?
     
     var winScore = 0
     
@@ -23,5 +24,9 @@ class PointsCell: UITableViewCell {
         buttonPressed?()
         // closure variable in UITableViewCell subclass. When button will be pressed this closure will let controller know that button's been pressed
     }
-
+    
+    @IBAction func minusButtonPressed(_ sender: Any) {
+        minusButton?()
+    }
+    
 }
