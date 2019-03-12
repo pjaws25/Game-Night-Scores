@@ -257,6 +257,9 @@
                                 <state key="normal" title="Clear">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearTeamOne:" destination="Eo5-cf-WBw" eventType="touchUpInside" id="aOy-Ri-ap6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WX5-O2-cTH">
                                 <rect key="frame" x="211" y="284" width="123" height="49"/>
@@ -278,6 +281,9 @@
                                 <state key="normal" title="Clear">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearTeamTwo:" destination="Eo5-cf-WBw" eventType="touchUpInside" id="wTb-V7-cq3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocz-dg-T9Y">
                                 <rect key="frame" x="40" y="575" width="123" height="49"/>
@@ -299,6 +305,9 @@
                                 <state key="normal" title="Clear">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearTeamThree:" destination="Eo5-cf-WBw" eventType="touchUpInside" id="BUT-pq-HF3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO3-EM-bhc">
                                 <rect key="frame" x="211" y="575" width="123" height="49"/>
@@ -320,6 +329,9 @@
                                 <state key="normal" title="Clear">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearTeamFour:" destination="Eo5-cf-WBw" eventType="touchUpInside" id="vgP-f6-7Cp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4W-jo-Liq">
                                 <rect key="frame" x="236" y="103" width="123" height="33"/>

@@ -37,10 +37,11 @@ class TeamsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    // Adding point and saving to UserDefaults. It also checks to see if there is any data in UserDefaults and increments from that value.
     
     @IBAction func teamOneButtonPressed(_ sender: Any) {
-        if let pointScoreString = UserDefaults.standard.value(forKey: "points1") as? String, let point = Int(pointScoreString) {
+        if let pointScoreString = UserDefaults.standard.value(forKey: "points1") as? String,
+            let point = Int(pointScoreString) {
             pointScore1 = point
             print(pointScore1 as Any)
         }
@@ -50,7 +51,8 @@ class TeamsViewController: UIViewController {
         
     }
     @IBAction func teamTwoButtonPressed(_ sender: Any) {
-        if let pointScoreString = UserDefaults.standard.value(forKey: "points2") as? String, let point = Int(pointScoreString) {
+        if let pointScoreString = UserDefaults.standard.value(forKey: "points2") as? String,
+            let point = Int(pointScoreString) {
             pointScore2 = point
             print(pointScore2 as Any)
         }
@@ -59,7 +61,8 @@ class TeamsViewController: UIViewController {
         UserDefaults.standard.set(teamTwoPoint.text, forKey: "points2")
     }
     @IBAction func teamThreeButtonPressed(_ sender: Any) {
-        if let pointScoreString = UserDefaults.standard.value(forKey: "points3") as? String, let point = Int(pointScoreString) {
+        if let pointScoreString = UserDefaults.standard.value(forKey: "points3") as? String,
+            let point = Int(pointScoreString) {
             pointScore3 = point
             print(pointScore3 as Any)
         }
@@ -68,13 +71,46 @@ class TeamsViewController: UIViewController {
         UserDefaults.standard.set(teamThreePoint.text, forKey: "points3")
     }
     @IBAction func teamFourButtonPressed(_ sender: Any) {
-        if let pointScoreString = UserDefaults.standard.value(forKey: "points4") as? String, let point = Int(pointScoreString) {
+        if let pointScoreString = UserDefaults.standard.value(forKey: "points4") as? String,
+            let point = Int(pointScoreString) {
             pointScore4 = point
             print(pointScore4 as Any)
         }
         pointScore4 += 1
         teamFourPoint.text = "\(pointScore4)"
         UserDefaults.standard.set(teamFourPoint.text, forKey: "points4")
+    }
+    
+    
+    //Clear button for each team score. Will set back to 0 and save 0 to UserDefaults
+    
+    @IBAction func clearTeamOne(_ sender: Any) {
+       UserDefaults.standard.removeObject(forKey: "points1")
+        let score = 0
+        teamOnePoint.text = "\(score)"
+        UserDefaults.standard.set(teamOnePoint.text, forKey: "points1")
+        UserDefaults.standard.synchronize()
+    }
+    @IBAction func clearTeamTwo(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "points2")
+        let score = 0
+        teamTwoPoint.text = "\(score)"
+        UserDefaults.standard.set(teamTwoPoint.text, forKey: "points2")
+        UserDefaults.standard.synchronize()
+    }
+    @IBAction func clearTeamThree(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "points3")
+        let score = 0
+        teamThreePoint.text = "\(score)"
+        UserDefaults.standard.set(teamThreePoint.text, forKey: "points3")
+        UserDefaults.standard.synchronize()
+    }
+    @IBAction func clearTeamFour(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "points4")
+        let score = 0
+        teamFourPoint.text = "\(score)"
+        UserDefaults.standard.set(teamFourPoint.text, forKey: "points4")
+        UserDefaults.standard.synchronize()
     }
     
     /*
