@@ -11,7 +11,6 @@ import UIKit
 class CoinFlipViewController: UIViewController {
     
     @IBOutlet weak var coinImage: UIImageView!
-    @IBOutlet weak var coinLabel: UILabel!
     
     let coinArray = ["quarter-png-siede-7", "us-quarter-png"]
 
@@ -24,6 +23,7 @@ class CoinFlipViewController: UIViewController {
 
     @IBAction func flipButtonPressed(_ sender: Any) {
         
+        coinImage.image = nil
         //generate random number
        let randomNumber = Int(arc4random_uniform(2))
         
@@ -31,14 +31,6 @@ class CoinFlipViewController: UIViewController {
         
         //update the coinImage based on the random index number
         coinImage.image = UIImage(named: coinArray[randomNumber])
-        
-        if randomNumber == 0 {
-            coinLabel.text = "Tails"
-        }
-        else {
-            coinLabel.text = "Heads"
-        }
-        
         
     }
     /*
